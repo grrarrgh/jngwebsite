@@ -98,6 +98,9 @@
       .contact p { margin: 0; color: #b9c2cc; }
       .contact code { font-family: var(--mono); background: rgba(255,255,255,.08); padding: 10px 14px; border-radius: 6px; font-size: 14px; color: #9fd3b0; }
 
+      .more { margin: 16px 0 0; font-size: 15px; }
+      .contact-links { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
+      .contact-links a { color: #f6f5f1; font-size: 14px; }
       footer { padding: 28px 0 40px; color: var(--muted); font-size: 13px; }
 
       @media (max-width: 820px) {
@@ -106,7 +109,7 @@
       }
       @media (max-width: 520px) {
         .nav div { gap: 14px; font-size: 13px; }
-        .nav div a:first-child { display: none; }
+        .nav div a:not([href^="http"]) { display: none; }
         .job { grid-template-columns: 1fr; padding: 20px; }
         .logo { width: 56px; height: 56px; }
         .logo img { width: 38px; height: 38px; }
@@ -120,9 +123,11 @@
         <strong>Joey Ng</strong>
         <div>
           <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
           <a href="#education">Education</a>
           <a href="#contact">Contact</a>
+          <a href="https://github.com/grrarrgh" target="_blank" rel="noopener">GitHub ↗</a>
         </div>
       </nav>
     </header>
@@ -159,8 +164,8 @@
             <a class="logo" href="https://www.kialo.com" target="_blank" rel="noopener"><img src="assets/kialo.com.png" alt="Kialo logo"></a>
             <div>
               <div class="job-top"><h3>Test Engineer</h3><span class="when">2018 – 2026</span></div>
-              <div class="company"><a href="https://www.kialo.com" target="_blank" rel="noopener">Kialo.com ↗</a> <small>· Berlin</small></div>
-              <p>Application testing and TestCafe automation for an online discussion and debate platform.</p>
+              <div class="company"><a href="https://www.kialo.com" target="_blank" rel="noopener">Kialo.com ↗</a> &amp; <a href="https://www.kialo-edu.com" target="_blank" rel="noopener">Kialo-edu.com ↗</a> <small>· Berlin</small></div>
+              <p>Application testing and TestCafe automation for an online discussion and debate platform, and for Kialo Edu — its EdTech version built for classrooms, with features for teachers and LMS integrations.</p>
               <ul>
                 <li>Planned and ran risk-based functional, integration, regression and end-to-end testing across new features and production fixes</li>
                 <li>Built, reviewed and maintained automated TestCafe tests to grow repeatable regression coverage</li>
@@ -201,6 +206,25 @@
             </div>
           </article>
         </div>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <p class="sub">What I build when nobody's asked me to test anything.</p>
+        <article class="job">
+          <a class="logo" href="https://github.com/grrarrgh/solobotc" target="_blank" rel="noopener" aria-label="Solo Clocktower on GitHub"><svg viewBox="0 0 16 16" width="40" height="40" aria-hidden="true"><path fill="#1b2430" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+          <div>
+            <div class="job-top"><h3>Solo Clocktower</h3><span class="when">JavaScript</span></div>
+            <div class="company"><a href="https://github.com/grrarrgh/solobotc" target="_blank" rel="noopener">github.com/grrarrgh/solobotc ↗</a></div>
+            <p>A dependency-free, single-player browser version of the social deduction game Blood on the Clocktower. You play on the good team; every other seat is an NPC and the game runs the Storyteller.</p>
+            <ul>
+              <li>NPCs hold private conversations, make claims and share info — and some of them lie, good players included</li>
+              <li>Full day/night cycle with night actions, nominations and voting</li>
+              <li>Seeded games, so a run can be replayed — handy when you're the one hunting the bugs</li>
+            </ul>
+          </div>
+        </article>
+        <p class="more"><a href="https://github.com/grrarrgh" target="_blank" rel="noopener">More on GitHub ↗</a></p>
       </section>
 
       <section id="skills">
@@ -265,7 +289,7 @@
             <h2>Get in touch</h2>
             <p>Contact details and references are available on request.</p>
           </div>
-          <code>status: available for new roles</code>
+          <div class="contact-links"><code>status: available for new roles</code><a href="https://github.com/grrarrgh" target="_blank" rel="noopener">github.com/grrarrgh ↗</a></div>
         </div>
       </section>
     </main>
