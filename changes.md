@@ -27,3 +27,7 @@
 - Added a GitHub link (https://github.com/grrarrgh) to the menu and the contact section.
 - New Projects section featuring Solo Clocktower (https://github.com/grrarrgh/solobotc), a single-player browser version of Blood on the Clocktower.
 - The live game site is not linked yet, because https://www.solobotc.com does not currently load over https.
+
+### Live game link
+- https://www.solobotc.com is now live, so the Solo Clocktower project links to it ("Play it at solobotc.com") next to the GitHub link.
+- The project logo is now Solo Clocktower's own icon (copied locally to `assets/solobotc.svg`) and links to the live game instead of GitHub.
