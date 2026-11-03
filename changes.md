@@ -1,5 +1,19 @@
 # Changes
 
+## 2026-11-03
+
+### Added Pixelfront project
+- New Projects card for Pixelfront (https://github.com/grrarrgh/pixelfront), a pixel-art desert RTS for Windows written in Python with pygame-ce.
+- Covers derrick capture and base building, the unit design screen (armour/weapon/speed trade-offs), and infantry suppression, taken from the repo README.
+- The repo has no icon (its art is all procedural), so the card uses a new hand-drawn 16×16 pixel-art tank, `assets/pixelfront.svg`, rendered with crisp pixels.
+- The two project cards now sit in the same spaced grid as the experience cards.
+
+## 2026-10-26 (deploy)
+
+### deploy to git pages
+- Added a `CNAME` file (`www.joeyng.net`) so GitHub Pages serves the site on the custom domain.
+- DNS checked: `www` is a CNAME to `grrarrgh.github.io`, the bare domain has GitHub's four A records and redirects to `www`, and HTTPS works.
+
 ## 2026-10-26
 
 ### Rebuilt portfolio page

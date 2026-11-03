@@ -60,6 +60,7 @@
       .job { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 24px; display: grid; grid-template-columns: 72px 1fr; gap: 20px; }
       .logo { width: 72px; height: 72px; border-radius: 12px; border: 1px solid var(--line); display: grid; place-items: center; background: #fff; overflow: hidden; }
       .logo img { width: 48px; height: 48px; object-fit: contain; }
+      .logo img.pixel { width: 100%; height: 100%; image-rendering: pixelated; }
       .logo.mono { text-decoration: none; background: var(--accent); color: #fff; font-weight: 700; font-size: 22px; letter-spacing: -.02em; border: 0; }
       .job-top { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 4px 16px; align-items: baseline; }
       .job h3 { margin: 0; font-size: 20px; }
@@ -211,6 +212,7 @@
       <section id="projects">
         <h2>Projects</h2>
         <p class="sub">What I build when nobody's asked me to test anything.</p>
+        <div class="jobs">
         <article class="job">
           <a class="logo" href="https://www.solobotc.com" target="_blank" rel="noopener"><img src="assets/solobotc.svg" alt="Solo Clocktower icon"></a>
           <div>
@@ -224,6 +226,20 @@
             </ul>
           </div>
         </article>
+        <article class="job">
+          <a class="logo" href="https://github.com/grrarrgh/pixelfront" target="_blank" rel="noopener"><img class="pixel" src="assets/pixelfront.svg" alt="Pixelfront icon: a pixel-art tank"></a>
+          <div>
+            <div class="job-top"><h3>Pixelfront</h3><span class="when">Python · pygame-ce</span></div>
+            <div class="company"><a href="https://github.com/grrarrgh/pixelfront" target="_blank" rel="noopener">github.com/grrarrgh/pixelfront ↗</a></div>
+            <p>A small old-school pixel-art real-time strategy game for Windows. Futuristic desert warfare: soldiers, jeeps and tanks fight over oil derricks. All the art is drawn in code, so there are no asset files.</p>
+            <ul>
+              <li>Capture oil derricks for income, build a base and train engineers, infantry, jeeps and tanks</li>
+              <li>A unit design screen: armour, weapon and speed modules, each with a trade-off, and units visibly change to match</li>
+              <li>Suppression: infantry under heavy fire go prone and crawl, slower and less accurate but harder to hit</li>
+            </ul>
+          </div>
+        </article>
+        </div>
         <p class="more"><a href="https://github.com/grrarrgh" target="_blank" rel="noopener">More on GitHub ↗</a></p>
       </section>
 
