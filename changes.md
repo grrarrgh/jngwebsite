@@ -1,5 +1,12 @@
 # Changes
 
+## 2026-11-10
+
+### Added The Silent Core project and the real Pixelfront icon
+- New Projects card for The Silent Core, a point-and-click adventure (TypeScript, Vite) from the private `workshop7` repo. It links to the playable Act I on GitHub Pages (https://grrarrgh.github.io/workshop7/, checked: HTTP 200). There's no GitHub link because the repo is private.
+- The card's icon is the game's painted Rune Tool (`assets/silentcore.png`, 128 px), the same art as the game's favicon.
+- The Pixelfront card now uses the icon made for the game's exe (`assets/pixelfront.png`, 256 px, from `tools/make_icon.py`). It replaces the hand-drawn placeholder `assets/pixelfront.svg`, which has been removed.
+
 ## 2026-11-03
 
 ### Added Pixelfront project
