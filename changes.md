@@ -1,5 +1,13 @@
 # Changes
 
+## 2026-11-23
+
+### Pixelfront card: the Unity version, with a download link
+- The Pixelfront card now describes only the Unity version (C#, Unity 6); the original Python/pygame-ce version and its repo link are gone.
+- The card and its icon link to the latest test build on the public downloads repo (https://github.com/grrarrgh/pixelfront-releases/releases/latest, checked: HTTP 200 without signing in). There's no source link because the Unity repo is private.
+- New description: isometric pixel-art RTS, two factions fighting over energy wells with soldiers, vehicles and aircraft; unit design; up to four players on a local network or computer opponents on Easy / Normal / Hard; and the release testing (a scripted playtest of about 590 checks per faction, a 91-scene screenshot test, computer-vs-computer balance matches), numbers from v0.23.0.
+- The icon stays `assets/pixelfront.png`: the Unity build has no icon of its own yet.
+
 ## 2026-11-10
 
 ### Added The Silent Core project and the real Pixelfront icon
