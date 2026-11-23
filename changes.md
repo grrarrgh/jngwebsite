@@ -1,5 +1,11 @@
 # Changes
 
+## 2026-11-24
+
+### Visitor stats with GoatCounter
+- Added the GoatCounter script before `</body>` in `index.html`, counting into https://grrarrgh.goatcounter.com.
+- GoatCounter is free for personal sites and uses no cookies, so the page needs no cookie banner. GitHub Pages has no visitor stats of its own.
+
 ## 2026-11-23
 
 ### Pixelfront card: the Unity version, with a download link
